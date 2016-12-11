@@ -4,7 +4,8 @@ using System.Linq;
 
 namespace GraphQL.Net
 {
-    internal class GraphQLType
+    // internal 
+    public class GraphQLType
     {
         public GraphQLType(Type type)
         {

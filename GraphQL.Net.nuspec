@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>GraphQL.Net</id>
+    <id>GraphQLib</id>
     <version>0.3.0</version>
-    <authors>Chad Kimes</authors>
+    <authors>Chad Kimes, Andrius K</authors>
     <owners>Chad Kimes</owners>
     <licenseUrl>https://github.com/ckimes89/graphql-net/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/ckimes89/graphql-net</projectUrl>

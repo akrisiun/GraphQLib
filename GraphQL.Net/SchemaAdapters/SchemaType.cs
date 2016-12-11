@@ -6,12 +6,13 @@ using GraphQL.Parser.CS;
 
 namespace GraphQL.Net.SchemaAdapters
 {
-    class SchemaType : SchemaQueryTypeCS<Info>
+    public class SchemaType : SchemaQueryTypeCS<Info>
     {
         private readonly GraphQLType _type;
         private readonly Lazy<IReadOnlyDictionary<string, ISchemaField<Info>>> _fields;
 
-        internal SchemaType(GraphQLType type, Schema schema)
+        // internal 
+        public SchemaType(GraphQLType type, Schema schema)
         {
             _type = type;
             _fields = new Lazy<IReadOnlyDictionary<string, ISchemaField<Info>>>(() => type.GetAllFieldIncludeBaseType()

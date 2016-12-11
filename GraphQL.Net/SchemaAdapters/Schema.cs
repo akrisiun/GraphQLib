@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using GraphQL.Parser;
 using GraphQL.Parser.CS;
 
 namespace GraphQL.Net.SchemaAdapters
 {
-    abstract class Schema : SchemaCS<Info>
+    public abstract class Schema : SchemaCS<Info>
     {
         internal readonly GraphQLSchema GraphQLSchema;
         protected Schema(GraphQLSchema schema)
@@ -24,7 +23,8 @@ namespace GraphQL.Net.SchemaAdapters
             return _typeMap[type] = new SchemaType(type, this);
         }
     }
-    class Schema<TContext> : Schema
+
+    public class Schema<TContext> : Schema
     {
         private readonly GraphQLSchema<TContext> _schema;
         private readonly Dictionary<string, ISchemaQueryType<Info>> _queryTypes;

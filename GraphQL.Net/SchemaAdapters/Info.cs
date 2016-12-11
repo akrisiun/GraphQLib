@@ -1,6 +1,6 @@
 ﻿namespace GraphQL.Net.SchemaAdapters
 {
-    class Info
+    public class Info
     {
         public Info(GraphQLField field)
         {

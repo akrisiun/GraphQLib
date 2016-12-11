@@ -1,4 +1,7 @@
 # GraphQL.Net
+
+http://graphql.org/learn/
+
 An implementation of GraphQL for .NET and IQueryable
 
 ## Description

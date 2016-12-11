@@ -1,6 +1,7 @@
 ﻿namespace GraphQL.Net
 {
-    internal enum ResolutionType
+    // internal 
+    public enum ResolutionType
     {
         Unmodified,
         ToList,

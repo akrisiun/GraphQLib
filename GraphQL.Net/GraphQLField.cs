@@ -8,7 +8,8 @@ using GraphQL.Parser.Execution;
 
 namespace GraphQL.Net
 {
-    internal class GraphQLField
+    // internal 
+    public class GraphQLField
     {
         public string Name { get; protected set; }
         public string Description { get; set; }
